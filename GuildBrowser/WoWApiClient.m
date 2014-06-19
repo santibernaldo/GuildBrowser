@@ -14,6 +14,7 @@ static dispatch_once_t oncePredicate;
     dispatch_once(&oncePredicate, ^{
         // initialize self with the baseURL for us region
         _sharedClient = [[self alloc] initWithBaseURL:[NSURL URLWithString:@"http://us.battle.net"]];
+        //Shared Commit Hello
     });
     
     return _sharedClient;
